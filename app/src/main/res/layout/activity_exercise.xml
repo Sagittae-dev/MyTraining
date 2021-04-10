@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    tools:context=".newtraining.NewExerciseActivity">
+
+    <TextView
+        android:id="@+id/exerciseActivityTitleTextView"
+        android:layout_width="339dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Choose Exercise from list or add Yours"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:shadowColor="#0E0E0E"
+        android:shadowDx="1.5"
+        android:shadowDy="1.5"
+        android:shadowRadius="1.6"
+        android:textColor="#EDFFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/chooseExercisesScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exerciseActivityTitleTextView">
+
+        <LinearLayout
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/chooseExercisesScrollView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/squatsCardView"
+                    android:tag="squats"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    android:onClick="chooseTypeYourExercise">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/squat_icon_exercises_list" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/deadliftsCardView"
+                    android:tag="deadlifts"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    android:onClick="chooseTypeYourExercise">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/deadlift_icon_exercises_list" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/backExerciseCardView"
+                    android:tag="backex"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    android:onClick="chooseTypeYourExercise">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/back_icon_exercises_list" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/chestExerciseCardView"
+                    android:tag="chestex"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    android:onClick="chooseTypeYourExercise">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/benchpress_icon_exercises_list" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/shouldersExerciseCardView"
+                    android:tag="shouldersex"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    android:onClick="chooseTypeYourExercise">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/shoulder_icon_exercises_list" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/armsExerciseCardView"
+                    android:tag="armsex"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    android:onClick="chooseTypeYourExercise">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/arm_icon_exercises_list" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/buttocksExerciseCardView"
+                    android:tag="buttocksex"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    android:onClick="chooseTypeYourExercise">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/hipthrust_icon_exercises_list" />
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/planksExerciseCardView"
+                    android:tag="bodyst"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    android:onClick="chooseTypeYourExercise">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/core_icon_exercises_list" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!--dupa
+        <ExpandableListView
+            android:id="@+id/exercisesItemListInTrainingActivityExpandableListView"
+            android:layout_width="318dp"
+            android:layout_height="545dp"
+            android:layout_marginTop="16dp"
+            android:maxHeight="500dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_max="500dp"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/exerciseActivityTitleTextView">
+
+        </ExpandableListView>
+        -->
+</androidx.constraintlayout.widget.ConstraintLayout>

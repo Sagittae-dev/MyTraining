@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#434343"
+    android:layout_marginBottom="6dp"
+    app:cardCornerRadius="15dp">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/exerciseNameInNewTraining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8sp"
+        android:text="exercise name"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#FDFDFD"
+        android:shadowColor="#0E0E0E"
+        android:shadowDx="1.5"
+        android:shadowDy="1.5"
+        android:shadowRadius="1.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/startTimeInNewTrainingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8sp"
+        android:shadowColor="#0E0E0E"
+        android:shadowDx="1.5"
+        android:shadowDy="1.5"
+        android:shadowRadius="1.6"
+        android:text="Start time: "
+        android:textColor="#FDFDFD"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exerciseNameInNewTraining" />
+
+    <TextView
+        android:id="@+id/finishTimeInNewTrainingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8sp"
+        android:shadowColor="#0E0E0E"
+        android:shadowDx="1.5"
+        android:shadowDy="1.5"
+        android:shadowRadius="1.6"
+        android:text="Stop time:"
+        android:textColor="#FDFDFD"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@+id/startTimeInNewTrainingTextView"
+        app:layout_constraintTop_toBottomOf="@+id/exerciseNameInNewTraining" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/seriesInExerciseInNewTrainingRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startTimeInNewTrainingTextView" />
+
+    <TextView
+        android:id="@+id/seriesCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8sp"
+        android:shadowColor="#0E0E0E"
+        android:shadowDx="1.5"
+        android:shadowDy="1.5"
+        android:shadowRadius="1.6"
+        android:text="Series count: "
+        android:textColor="#FDFDFD"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@+id/finishTimeInNewTrainingTextView"
+        app:layout_constraintTop_toBottomOf="@+id/exerciseNameInNewTraining" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

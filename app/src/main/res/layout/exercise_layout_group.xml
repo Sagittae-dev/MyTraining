@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/exercise_group_title"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="?android:attr/expandableListPreferredChildIndicatorLeft"
+    android:paddingEnd="10dp"
+    android:paddingBottom="10dp"
+    android:shadowColor="#0E0E0E"
+    android:shadowDx="1.5"
+    android:shadowDy="1.5"
+    android:shadowRadius="1.6"
+    android:textColor="#FDFCFC"
+    android:textSize="18sp"
+    android:textStyle="bold"/>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Training</string>
+    <string name="textview">TextView</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="history">History</string>
+    <string name="new_training">New Training</string>
+    <string name="account">Account</string>
+
+    <string-array name="typeOfTrainings">
+        <item>Powerlift</item>
+        <item>Bodybuilding</item>
+        <item>Crossfit</item>
+        <item>Strongman</item>
+        <item>Calisthenics</item>
+    </string-array>
+
+</resources>
